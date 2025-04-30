@@ -2,6 +2,8 @@ import streamlit as st
 
 st.set_page_config(page_title = 'Rock Paper Scissors', page_icon = '🎮', layout = 'wide')
 
-choice = st.radio('Pick one', ['🧱','📄','✂'])
+st.title('Rock Paper Scissors')
+st.write('Play against the computer to see if you can win!')
+choice = st.radio('Pick one', ['Rock','Paper','Scissors'])
 
 
