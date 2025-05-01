@@ -11,5 +11,7 @@ pressed = st.button('check')
 if pressed:
     if user_choice == number:
         st.write('You guessed the number!')
-    else:
-        st.write('Try again.')
+    elif user_choice > number:
+        st.write('Too big guess a smaller number.')
+    elif user_choice < number:
+        st.write('Too small guess a bigger number.')
