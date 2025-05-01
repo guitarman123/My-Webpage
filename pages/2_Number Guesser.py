@@ -8,8 +8,8 @@ number = random.randint(0, 20)
 while True:
     guess = st.number_input('Pick a number.', 0, 20)
     if guess == number:
-        st.write_stream('You guessed the number!')
+        st.write('You guessed the number!')
     if guess < number:
-        st.write_stream('Too low.')
+        st.write('Too low.')
     if guess > number:
-        st.write_stream('Too high.')
+        st.write('Too high.')
