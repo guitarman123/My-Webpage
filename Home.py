@@ -1,6 +1,4 @@
 import streamlit as st
-
-
 st.set_page_config(page_title = 'K\'s Python Projects', page_icon = '🎸', layout = 'wide')
 
 #write anything
@@ -16,7 +14,7 @@ with st.container():
     st.write('---')
     left_column, right_column = st.columns(2)
     with left_column:
-        st.header('what this is for')
+        st.header('What this is for')
         st.write('##')
         st.write('''
         This is a website where I will post my python projects and other miscellaneous things .''')
