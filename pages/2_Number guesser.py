@@ -13,8 +13,8 @@ if pressed1:
     pressed = st.button('check')
     if pressed:
         if user_choice == number:
-            st.write('You guessed the number!')
+            st.write_stream('You guessed the number!')
         elif user_choice > number:
-            st.write('Too big guess a smaller number.')
+            st.write_stream('Too big guess a smaller number.')
         elif user_choice < number:
-            st.write('Too small guess a bigger number.')
+            st.write_stream('Too small guess a bigger number.')
