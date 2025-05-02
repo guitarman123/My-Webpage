@@ -19,3 +19,4 @@ def game():
 
         else:
             st.write('You lost!')
+game()
