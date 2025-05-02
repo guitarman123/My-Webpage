@@ -4,6 +4,8 @@ import secrets
 
 st.set_page_config(page_title = 'K\'s Python Projects', page_icon = '🎸', layout = 'wide')
 
+st.write_stream('Rock, Paper, Scissors!')
+
 def game():
     rps = ['Rock','Paper', 'Scissors']
     user_choice = st.selectbox("Choose your move:", ["Rock", "Paper", "Scissors"])
