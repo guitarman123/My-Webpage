@@ -1,13 +1,15 @@
 import streamlit as st
 import random
+import secrets
 
 st.set_page_config(page_title = 'K\'s Python Projects', page_icon = '🎸', layout = 'wide')
 
 def game():
+    rps = ['Rock','Paper', 'Scissors']
     user_choice = st.selectbox("Choose your move:", ["Rock", "Paper", "Scissors"])
 
     if st.button('Play'):
-        computer = random.random('Rock','Paper','Scissors')
+        computer = secrets.choice(rps)
         if computer == user_choice:
             st.write('Tie')
         elif computer == 'Rock' and user_choice == 'Paper':
