@@ -7,7 +7,7 @@ def game():
     user_choice = st.selectbox("Choose your move:", ["Rock", "Paper", "Scissors"])
 
     if st.button('Play'):
-        computer = random.choice('Rock','Paper','Scissors')
+        computer = random.random('Rock','Paper','Scissors')
         if computer == user_choice:
             st.write('Tie')
         elif computer == 'Rock' and user_choice == 'Paper':
