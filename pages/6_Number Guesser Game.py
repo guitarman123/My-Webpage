@@ -12,7 +12,7 @@ def game():
     user_choice = st.number_input('Pick a Number:', [1, 10])
 
     if st.button('Check'):
-        number = random.randint(1, 10)
+        number = random.randrange(1, 10)
         if user_choice == number:
             st.write('You win!')
         if user_choice > number:
