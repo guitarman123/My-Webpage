@@ -10,11 +10,11 @@ def game():
         computer = random.choice('r','p','s')
         if computer == user_choice:
             st.write('Tie')
-        elif computer == 'r' and user_choice == 'p':
+        elif computer == 'r' and user_choice == 'Paper':
             st.write('You win!')
-        elif computer == 'p' and user_choice == 's':
+        elif computer == 'p' and user_choice == 'Scissors':
             st.write('You win!')
-        elif computer == 's' and user_choice == 'r':
+        elif computer == 's' and user_choice == 'Rock':
             st.write('You win!')
 
         else:
