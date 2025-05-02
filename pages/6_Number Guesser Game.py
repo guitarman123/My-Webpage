@@ -9,7 +9,7 @@ st.write('Use the slider below to pick a number then press check to see if your 
 
 
 def game():
-    user_choice = st.secrets.number_input('Pick a Number:', [1, 10])
+    user_choice = st.number_input('Pick a Number:', [1, 10])
 
     if st.button('Check'):
         number = random.randint(1, 10)
