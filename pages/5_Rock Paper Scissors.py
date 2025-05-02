@@ -10,6 +10,7 @@ def game():
 
     if st.button('Play'):
         computer = secrets.choice(rps)
+        st.write(computer)
         if computer == user_choice:
             st.write('Tie')
         elif computer == 'Rock' and user_choice == 'Paper':
