@@ -9,7 +9,7 @@ def game():
     user_choice = st.selectbox("Choose your move:", ["Rock", "Paper", "Scissors"])
 
     if st.button('Play'):
-        computer = secrets.choice(rps)
+        computer = secrets.choice(f'Computer chose {rps}.')
         st.write(computer)
         if computer == user_choice:
             st.write('Tie')
