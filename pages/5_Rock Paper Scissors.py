@@ -4,7 +4,8 @@ import secrets
 
 st.set_page_config(page_title = 'K\'s Python Projects', page_icon = '🎸', layout = 'wide')
 
-st.write_stream('Rock, Paper, Scissors!')
+st.title('Rock, Paper, Scissors!')
+st.write('See if you can beat the computer in a game of rock, paper, scissors')
 
 def game():
     rps = ['Rock','Paper', 'Scissors']
