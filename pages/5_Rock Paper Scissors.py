@@ -7,14 +7,14 @@ def game():
     user_choice = st.selectbox("Choose your move:", ["Rock", "Paper", "Scissors"])
 
     if st.button('Play'):
-        computer = random.choice('r','p','s')
+        computer = random.choice('Rock','Paper','Scissors')
         if computer == user_choice:
             st.write('Tie')
-        elif computer == 'r' and user_choice == 'Paper':
+        elif computer == 'Rock' and user_choice == 'Paper':
             st.write('You win!')
-        elif computer == 'p' and user_choice == 'Scissors':
+        elif computer == 'Paper' and user_choice == 'Scissors':
             st.write('You win!')
-        elif computer == 's' and user_choice == 'Rock':
+        elif computer == 'Scissors' and user_choice == 'Rock':
             st.write('You win!')
 
         else:
